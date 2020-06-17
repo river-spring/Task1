@@ -3,45 +3,96 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+.clearfix::after {
+	content: "";
+	display: block;
+	clear : both;
+}
 main {
 	width: 960px;
 	margin: 50px auto;
 }
-section {
+header {
+	height: 50px;
+	background-color: #ff9a4b;
+}
+.section {
 	width: 300px;
-	border: 1px solid;
 	padding: 10px;
 	float:left;
+	background-color: #eeeeee;
 	position: relative;
 }
+h3 {
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
 .step{
-	background-color: orange;
+	background-color: #ff9a4b;
 	color: white;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
-.main-image {
-	width: 280px;
+.lesson {
+	height: 150px;
 }
+.image1 {
+	background-image: url(img/flow01.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.image2 {
+	background-image: url(img/flow02.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.image3 {
+	background-image: url(img/flow03.png);
+	background-size: cover;
+	background-position: center;
+}
+
 .center {
 	margin: 0 30px;
+}
+footer {
+	height: 50px;
+	background-color: #aaaaaa;
 }
 @media screen and (max-width:768px) {
 	main {
 		width: 100%;
 		margin: 50px auto;
 	}
-	section {
+	.section {
 		width: 90%;
 		margin: 0 auto;
 		float: none;
 	}
-	.main-image {
-		margin: 0 auto;
-		width: 100%;
+	.lesson {
+		height: 150px;
+	}
+	.image1 {
+	background-image: url(img/flow01.png);
+	background-size: cover;
+	background-position: center;
+}
 
-		}
+.image2 {
+	background-image: url(img/flow02.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.image3 {
+	background-image: url(img/flow03.png);
+	background-size: cover;
+	background-position: center;
+}
+
 	.center {
 		margin: 20px auto;
 	}
