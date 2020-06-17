@@ -37,6 +37,11 @@ section {
 		margin: 0 auto;
 		float: none;
 	}
+	.main-image {
+		margin: 0 auto;
+		width: 100%;
+
+		}
 	.center {
 		margin: 20px auto;
 	}
